@@ -17,26 +17,37 @@ class Navbar extends Component {
     }`
     const UnorderedListItem = styled.li`{
       flex-basis: 20%;
-    }`
-    const Links = styled.a`{
-      text-decoration: none;
-      color: #333;
-      opacity: .9;
-      transition: all 300ms;
-      &:hover {
-        color: #000;
-        opacity: 1;
+      a {
         text-decoration: none;
+        color: #333;
+        opacity: .9;
+        transition: all 300ms;
+        &:hover {
+          color: #000;
+          opacity: 1;
+          text-decoration: none;
+        }
       }
     }`
+    // const Links = styled.a`{
+    //   text-decoration: none;
+    //   color: #333;
+    //   opacity: .9;
+    //   transition: all 300ms;
+    //   &:hover {
+    //     color: #000;
+    //     opacity: 1;
+    //     text-decoration: none;
+    //   }
+    // }`
     return (
       <NavBar>
         <UnorderedList>
-          <UnorderedListItem><Links href="#">Home</Links></UnorderedListItem>
-          <UnorderedListItem><Links href="#">Trending products</Links></UnorderedListItem>
-          <UnorderedListItem><Links href="#">Sale</Links></UnorderedListItem>
-          <UnorderedListItem><Links href="#">About us</Links></UnorderedListItem>
-          <UnorderedListItem><Links href="#">Contact us</Links></UnorderedListItem>
+          <UnorderedListItem><a href="#">Home</a></UnorderedListItem>
+          <UnorderedListItem><a href="#">Trending products</a></UnorderedListItem>
+          <UnorderedListItem><a href="#">Sale</a></UnorderedListItem>
+          <UnorderedListItem><a href="#">About us</a></UnorderedListItem>
+          <UnorderedListItem><a href="#">Contact us</a></UnorderedListItem>
         </UnorderedList>
       </NavBar>
     )
